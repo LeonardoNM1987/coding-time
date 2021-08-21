@@ -1,0 +1,5 @@
+1ª Frase de dentro do arquivo txt.
+Segunda linha
+terceira linha
+
+quinta linha

@@ -15,22 +15,29 @@
 
 		<h1>Learning About Something</h1>
 
-		<?php
-		echo "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse dolores maiores ipsam suscipit nemo atque dolorem minima necessitatibus excepturi asperiores vel minus, veniam aut at ullam amet quae eligendi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci pariatur ea quibusdam at asperiores. Esse incidunt dicta, labore, adipisci ipsa illo ex, qui inventore id nobis neque! Aut, aliquid placeat..</p>";
-		?>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse dolores maiores ipsam suscipit nemo atque dolorem minima necessitatibus excepturi asperiores vel minus, veniam aut at ullam amet quae eligendi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci pariatur ea quibusdam at asperiores. Esse incidunt dicta, labore, adipisci ipsa illo ex, qui inventore id nobis neque! Aut, aliquid placeat..</p>
 		<hr>
 		<?php
 
 		$var = "Leonardo";
-		echo "<br>Valor da variável: $var";
-		unset($var);
+		echo "Valor da variável: $var<br>";
+				
+		$arquivo = fopen("test.txt", "r") or die ("Não foi possível abrir o arquivo!");
+				
+		echo "----------------------<br>";					
 		
-		if(isset($var)){
-			echo "<br>Novo Valor da variável: $var";
-		}else
-			echo "<br>[Variável não definida]";
-
+		while($line = fgets($arquivo)){
+			echo $line."<br>";
+		}
+		echo "----------------------<br>";	
+		fclose($arquivo);
+		
+		
 		?>
+
+		
+
+
 
 
 	</section>
