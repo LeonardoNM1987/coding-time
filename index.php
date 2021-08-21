@@ -21,8 +21,14 @@
 		<hr>
 		<?php
 
-		$variavel = "Leonardo";
-		echo "Valor da variável: $variavel";
+		$var = "Leonardo";
+		echo "<br>Valor da variável: $var";
+		unset($var);
+		
+		if(isset($var)){
+			echo "<br>Novo Valor da variável: $var";
+		}else
+			echo "<br>[Variável não definida]";
 
 		?>
 
