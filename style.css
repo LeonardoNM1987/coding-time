@@ -5,7 +5,7 @@
 
 body{
 	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(186,0,185,1) 100%);
 }
 
 section{
@@ -13,18 +13,22 @@ section{
 	width: 60%;	
 	box-shadow: black 3px 3px 8px;
 	background-color: white;
-	padding: 20px 0 50px 0;
+	padding: 50px;
 	
+}
+
+hr{
+	margin: 20px 0;
 }
 
 h1{
 	text-align: center;
-	padding-top: 20px;
+	
 	
 }
 
 p{	
-	margin: 40px;
+	margin:20px 0;	
 	text-indent: 20px;
 	text-align: justify;
 }
