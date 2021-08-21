@@ -1,3 +1,2 @@
 # coding-time
-All study content i'm actually reviewing 
-There are just files to learning git.
+Todos os arquivos contidos aqui são apenas para estudos em cursos que realizo.
