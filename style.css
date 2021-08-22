@@ -4,6 +4,7 @@
 }
 
 body{
+	
 	background: rgb(2,0,36);
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(186,0,185,1) 100%);
 }
@@ -22,13 +23,37 @@ hr{
 }
 
 h1{
+	text-align: center;	
+}
+h3{
 	text-align: center;
-	
-	
 }
 
 p{	
 	margin:20px 0;	
 	text-indent: 20px;
 	text-align: justify;
+}
+
+.leituradearquivo{	
+	width: 400px;
+	border-radius: 8px;
+	background-color: rgb(212, 243, 216);
+	padding: 20px;
+	margin: 20px auto;
+}
+
+#form01{	
+	width: 400px;
+	margin: 20px auto;	
+}
+
+#form01 legend{
+	font-weight: bold;
+	text-align: center;
+	padding: 0 10px;
+}
+
+#form01 input, textarea, label{
+	margin: 10px;
 }

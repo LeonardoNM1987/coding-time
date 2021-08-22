@@ -13,36 +13,59 @@
 
 	<section>
 
-		<h1>Learning Something</h1>
+		<h1>O que é o PHP?</h1>
 
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse dolores maiores ipsam suscipit nemo atque dolorem minima necessitatibus excepturi asperiores vel minus, veniam aut at ullam amet quae eligendi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci pariatur ea quibusdam at asperiores. Esse incidunt dicta, labore, adipisci ipsa illo ex, qui inventore id nobis neque! Aut, aliquid placeat..</p>
+		<p>O PHP (um acrônimo recursivo para PHP: Hypertext Preprocessor) é uma linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML. Em vez de muitos comandos para mostrar HTML (como acontece com C ou Perl), as páginas PHP contém HTML em código mesclado que faz "alguma coisa" (neste caso, mostra "Olá, eu sou um script PHP!"). O código PHP é delimitado pelas instruções de processamento (tags) de início e fim <strong>< ?php e ?></strong> que permitem que você entre e saia do "modo PHP".</p>
 		<hr>
-		<?php
+		
+		<!--##### LEITURA DE ARQUIVO TXT #####-->
+		
+		<h2>Prática 01: As informações abaixo são lidas do arquivo <i>test.txt</i>, que encontra-se na raiz. </h2>
+		
+		<div class="leituradearquivo">		
+		<?php		
+			
+			if(fopen("test.txt", "r")){
+				$arquivo = fopen("test.txt", "r");		
+				echo "<h3>".fgets($arquivo)."</h3><p>";
+				while($line = fgets($arquivo)){
+					echo $line."<br>";
+				}	
+				echo "</p>";			
+				fclose($arquivo);
+			}else
+				echo "[ERRO: Não foi possível localizar o arquivo test.txt]";
+			?>
+		</div>	
+		<hr>
+		<h2>Prática 02: A notícia inserida abaixo irá carregar em uma nova página. </h2>
+		<!--##### Inserir informação exibida na página #####-->		
+		<form action="noticiapersonalizada.php" method="post" id="form01">
+			<fieldset>
+			<legend>Notícia Personalizada</legend>
+			<label for="titulo">Título:</label><input type="text" id="titulo" name="titulo" required><br>
+			<label for="conteudo">Conteúdo:</label><textarea type="textarea" id="conteudo" name="conteudo" rows="10" cols="50" required></textarea><br>
+			<input type="submit" value="Enviar" name="envianoticia">
+			</fieldset>
+		</form>	
+		
+		
 
-		$var = "Carro";
-		echo "Valor da variável: $var<br>";
-				
-		$arquivo = fopen("test.txt", "r") or die ("Não foi possível abrir o arquivo!");
-				
-		echo "----------------------<br>";					
-		
-		while($line = fgets($arquivo)){
-			echo $line."<br>";
-		}
-		echo "----------------------<br>";	
-		fclose($arquivo);
-		
-		
-		?>
-
-		
-
+		<hr>
 
 
 
 	</section>
 
 </main>
+
+<script>
+
+
+
+</script>
+
+
 
 </body>
 </html>
