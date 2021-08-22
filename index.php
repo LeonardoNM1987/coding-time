@@ -19,7 +19,7 @@
 		<hr>
 		<?php
 
-		$var = "Leonardo";
+		$var = "Carro";
 		echo "Valor da variável: $var<br>";
 				
 		$arquivo = fopen("test.txt", "r") or die ("Não foi possível abrir o arquivo!");
