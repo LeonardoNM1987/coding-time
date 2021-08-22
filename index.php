@@ -13,7 +13,7 @@
 
 	<section>
 
-		<h1>Learning About Something</h1>
+		<h1>Learning Something</h1>
 
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum esse dolores maiores ipsam suscipit nemo atque dolorem minima necessitatibus excepturi asperiores vel minus, veniam aut at ullam amet quae eligendi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci pariatur ea quibusdam at asperiores. Esse incidunt dicta, labore, adipisci ipsa illo ex, qui inventore id nobis neque! Aut, aliquid placeat..</p>
 		<hr>
