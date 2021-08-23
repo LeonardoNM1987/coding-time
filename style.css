@@ -57,3 +57,23 @@ p{
 #form01 input, textarea, label{
 	margin: 10px;
 }
+
+.alinhabotao{		
+	text-align: center;
+}
+
+.botaopersonalizado{	
+		
+}
+
+a{
+	background-color: rgb(124, 1, 124);
+	color: white;
+	border-radius: 10px;
+	padding: 8px 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	cursor: pointer;
+}

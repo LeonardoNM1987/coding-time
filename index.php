@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	<title>Learning GIT</title>
-</head>
+<?php require "head.php"?>
 <body>
 
 <main>
@@ -48,12 +40,11 @@
 			<input type="submit" value="Enviar" name="envianoticia">
 			</fieldset>
 		</form>	
-		
-		
-
 		<hr>
 
+		<h2>Prática 03: Testando atribuição e demais funcionalidades variadas </h2>
 
+		<div class="alinhabotao"><a href="testesvariados.php">Ir para página de testes</a></div>
 
 	</section>
 
