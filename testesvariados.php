@@ -6,11 +6,16 @@
 
 	<?php
 
-	$a = NULL;
-	$b = 10;
-	$c = NULL;
 
-	echo $a ?? $b ?? $c;
+	$idade = 16;
+
+	$resultado = (10 + 10 == 21) ? "Correto." : "Incorreto.";
+
+	echo $resultado;
+
+
+
+
 	
 	?>
 
